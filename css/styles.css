@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000;
+}
+.nav{
+    font-family: 'Electrolize', sans-serif;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border: red solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    height: 90px;
+    width: 200px;
+    border: red solid;
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 150px;
+    border: red solid;
+}
+
+.redes img{
+    height: 100%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    border: red solid;
+}
+ul li {
+    margin: 20px;
+}
+ul li a{
+    color: aliceblue;
+    text-transform: uppercase;
+}
