@@ -17,7 +17,7 @@ body{
     width: 100%;
     height: 100px;
     background-color: black;
-    border: red solid;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -26,7 +26,7 @@ body{
 .logo{
     height: 90px;
     width: 200px;
-    border: red solid;
+
 }
 .logo img {
     height: 100%;
@@ -37,16 +37,26 @@ body{
     justify-content: space-between;
     height: 30px;
     width: 150px;
-    border: red solid;
+
+}
+
+img{
+    height: 30px;
+    width: 30px;
 }
 
 .redes img{
     height: 100%;
 }
+
+img:hover{
+    opacity: 70%;
+    transition: .1s;
+}
 ul{
     display: flex;
     align-items: center;
-    border: red solid;
+
 }
 ul li {
     margin: 20px;
@@ -61,19 +71,18 @@ ul li a:hover{
     transition: .2s;
 }
 .main-content{
-    border: red solid;
     width: 100%;
     height: 800px;
     background-image: url(../img/publico2.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .main-text{
     width: 100%;
-    height: 900px;
+    height: 800px;
     font-family: 'Anton', sans-serif;
-    border: red solid;
     color: rgb(255, 255, 255);
     background-color: #0000006a;
     display: flex;
@@ -81,8 +90,8 @@ ul li a:hover{
     align-items: center;
 }
 .txt{
-    margin-bottom: 440px;
-    border: red solid;
+    text-align: center;
+    margin-bottom: 240px;
     width: 730px;
 }
 
@@ -92,13 +101,194 @@ ul li a:hover{
 .txt-content{
     display: flex;
     justify-content: center;
-    border: red solid;
+
 }
 .txt-content p{
     width: 400px;
     font-family: 'Electrolize', sans-serif;
 }
 
-.btn{
-    border: red solid;
+.btn-1{
+    display: inline-block;
+    background-color: rgba(51, 51, 51, 0.575);
+    color: rgb(249, 250, 252);
+    text-transform: uppercase;
+    border-image: initial;
+    padding: 11px 35px;
+}
+
+.btn-1:hover{
+    opacity: 70%;
+    transition: .1s;
+}
+.sponsor{
+    width: 100%;
+    height: 40px;
+    background-image: url(../img/sponsors.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section-metallica{
+    display: flex;
+}
+
+.metallica-container1{
+    text-align: center;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    padding: 100px 20px 100px 100px;
+}
+
+.metallica-container1 h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+}
+
+.metallica-container1 p{
+    margin: 40px 130px;
+    width: 350px;
+}
+.metallica-container1 p, a{
+    font-family: 'Electrolize', sans-serif;
+}
+.metallica-container1 h2, p{
+    color: rgb(255, 255, 255);
+}
+
+.metallica-container2{
+    background-image: url(../img/metallica.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.section-expansion{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rasgado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.expansion-container2{
+    background-image: url(../img/publico1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 120px;
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.expansion-container1{
+    margin-top: 40px;
+    text-align: center;
+    width: 50%;
+    padding: 100px 20px 100px 100px;
+}
+
+.expansion-container1 h2 {
+    text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+}
+
+.expansion-container1 p {
+    color: rgb(255, 255, 255);
+    margin: 40px 130px;
+    width: 350px;
+    text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.expansion-container1 p {
+    font-family: 'Electrolize', sans-serif;
+}
+.section-cartel{
+    background-image: url(../img/cartel2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 355px 0px;
+}
+
+.section-mapa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mapa.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 245px 0px;
+}
+
+.mapa-content{
+    text-align: center;
+}
+.mapa-content h2{
+    color: #ffffff;
+    font-family: 'Anton';
+    font-size: 70px;
+    padding: 40px;
+}
+
+.pie-de-pagina{
+    font-family: 'Electrolize', sans-serif;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.pie-de-pagina .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-de-pagina .g1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pagina .g1 .box figure img{
+    width: 480px;
+    height: 320px;
+}
+
+.pie-de-pagina .g1 .box h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-de-pagina .g1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-de-pagina .g1 .redsocial a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+.pie-de-pagina .g2{
+    background-color: #131313;
+    padding: 15px 10px;
+    text-align: center;
+    color: #efefef;
+}
+.pie-de-pagina .g2 small{
+    font-size: 15px;
 }
