@@ -55,3 +55,50 @@ ul li a{
     color: aliceblue;
     text-transform: uppercase;
 }
+
+ul li a:hover{
+    color: rgb(146, 146, 146);
+    transition: .2s;
+}
+.main-content{
+    border: red solid;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/publico2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-text{
+    width: 100%;
+    height: 900px;
+    font-family: 'Anton', sans-serif;
+    border: red solid;
+    color: rgb(255, 255, 255);
+    background-color: #0000006a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt{
+    margin-bottom: 440px;
+    border: red solid;
+    width: 730px;
+}
+
+.txt h1{
+    font-size: 70px;
+}
+.txt-content{
+    display: flex;
+    justify-content: center;
+    border: red solid;
+}
+.txt-content p{
+    width: 400px;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.btn{
+    border: red solid;
+}
