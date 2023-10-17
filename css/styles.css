@@ -40,19 +40,10 @@ body{
 
 }
 
-img{
-    height: 30px;
-    width: 30px;
-}
-
 .redes img{
     height: 100%;
 }
 
-img:hover{
-    opacity: 70%;
-    transition: .1s;
-}
 ul{
     display: flex;
     align-items: center;
@@ -283,6 +274,12 @@ ul li a:hover{
     line-height: 45px;
     margin-right: 10px;
 }
+
+.pie-de-pagina  .g1 .redsocial a img{
+    width: 45px;
+    height: 45px;
+}
+
 .pie-de-pagina .g2{
     background-color: #131313;
     padding: 15px 10px;
@@ -401,4 +398,58 @@ ul li a:hover{
 .card:hover{
     opacity: 80%;
     transition: .1s;
+}
+
+.section-slipknot{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/noticias/Slipknot.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 280px 0px;
+}
+
+.slipknot-txt{
+    margin: 20px;
+}
+.slipknot-txt h3{
+    font-family: 'Anton',sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+}
+.slipknot-txt a{
+    text-decoration: none;
+
+    font-family: 'Electrolize', sans-serif;
+    color: #ffffff;
+}
+
+.galeria-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 260px;
+    padding: 20px;
+    grid-gap: 90px;
+    margin-bottom: 120px;
+}
+
+.galeria-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria-item{
+    border: #101010 solid;
+    position: relative;
+}
+.galeria-title{
+    font-family: 'Anton',sans-serif;
+    position: absolute;
+    bottom: 0;
+    color: #efefef;
+}
+.galeria-item a{
+    text-decoration: none;
+    color: #efefef;
+    font-family: 'Electrolize', sans-serif;
+    background-color: #131313;
 }
