@@ -17,7 +17,6 @@ body{
     width: 100%;
     height: 100px;
     background-color: black;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -37,27 +36,26 @@ body{
     justify-content: space-between;
     height: 30px;
     width: 150px;
-
 }
 
 .redes img{
     height: 100%;
 }
 
-ul{
+.nav ul{
     display: flex;
     align-items: center;
 
 }
-ul li {
+.nav ul li {
     margin: 20px;
 }
-ul li a{
+.nav ul li a{
     color: aliceblue;
     text-transform: uppercase;
 }
 
-ul li a:hover{
+.nav ul li a:hover{
     color: rgb(146, 146, 146);
     transition: .2s;
 }
@@ -626,4 +624,135 @@ input[type="submit"]{
     outline: none;
     border-radius: 8px;
     border: rgba(0, 0, 0, 0) solid;
+}
+
+/*----------- arranca el responsive...-------- */
+
+.bar-btn{
+    display: none;
+    font-size: 25px;
+    color: #ffffff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.913);
+    text-align: center;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+}
+
+.nav-menu li a:hover{
+    color: #630c0c;
+    transition: .2s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+        position: fixed;
+    }
+    .main-content{
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+    }
+    .main-text{
+        height: 100%;
+    }
+    .txt{
+        margin-bottom: 0;
+    }
+    .metallica-container1{
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/metallica.jpg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        padding: 100px 20px 100px 100px;
+    }
+    .metallica-container1 h2{
+        margin-left: -23%;
+    }
+    .metallica-container1 p{
+        margin-left: -10%;
+    }
+    
+    .metallica-container1 a{
+        margin-left: -30%;
+    }
+    
+    .metallica-container2{
+        display: none;
+    }
+
+    .expansion-container2{
+        display: none;
+    }
+    .expansion-container1{
+        margin-top: 80px;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+    .expansion-container1 p{
+        margin-left: 60px;
+    }
+
+    .section-cartel{
+        display: none;
+    }
+    
+    .pie-de-pagina{
+        display: none;
+    }
+
+
+
+
+
+    .nav ul{
+        display: none;
+    }
+    .redes{
+        display: none;
+    }
+    .bar-btn{
+        display: block;
+    }
 }
