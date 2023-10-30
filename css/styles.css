@@ -295,6 +295,9 @@ a{
 .pie-de-pagina .g2 small{
     font-size: 15px;
 }
+.box1{
+    display: none;
+}
 
 .fondo-shows{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/calavera-guitarra1.jpg);
