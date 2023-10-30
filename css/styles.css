@@ -339,6 +339,48 @@ a{
     padding: 20px 0;
 }
 
+.card1 {
+    border-radius: 20px;
+    background-image: url('../img/grilla-concierto/buenosaires.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    background-image: url('../img/grilla-concierto/lapampa.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.card3 {
+    background-image: url('../img/grilla-concierto/catamarca.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.card4 {
+    background-image: url('../img/grilla-concierto/cordoba.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.card5 {
+    background-image: url('../img/grilla-concierto/santacruz.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.card6 {
+    background-image: url('../img/grilla-concierto/entrerios.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
 .card {
     border-radius: 10px;
     min-height: 200px;
@@ -359,6 +401,7 @@ a{
 }
 
 .banner {
+    background-image: url('../img/grilla-concierto/cartel.jpg');
     border-radius: 10px;
     text-align: center;
     padding: 20px;
@@ -688,6 +731,7 @@ input[type="submit"]{
 @media screen and (max-width: 768px){
     .nav{
         position: fixed;
+        z-index: 1000;
     }
     .main-content{
         background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
@@ -745,22 +789,62 @@ input[type="submit"]{
     .section-cartel{
         display: none;
     }
-    
-    .pie-de-pagina{
+
+    .logo{
         display: none;
     }
-
-
-
-
-
     .nav ul{
+        display: flex;
+    }
+    .nav ul li{
+        width: 60px;
+        height: 10px;
+    }
+    .redes{
+        display: none;
+    }
+    
+    .contenedor {
+    margin-top: 20px;
+    grid-template-columns: 2fr 1fr;
+    }
+
+    .contenedor-conciertos{
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pie-de-pagina{
+        display: block;
+    }
+
+    
+}
+@media screen and (max-width: 987px){
+    .logo{
         display: none;
     }
     .redes{
         display: none;
     }
-    .bar-btn{
+    .expansion-container1{
+        display: none;
+    }
+    .contenedor {
+    grid-template-columns: 2fr 1fr;
+    }
+
+    .contenedor-conciertos{
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box1{
+        display: none;
+    }
+    .pie-de-pagina{
         display: block;
     }
+    .box1{
+        display: none;
+    }
 }
+
