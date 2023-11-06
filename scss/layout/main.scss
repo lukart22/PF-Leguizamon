@@ -6,7 +6,7 @@
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        min-height: calc(520vh - 300px);
+        min-height: calc(490vh - 300px);
         @include mobile{
                 background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
                 background-size: cover;
