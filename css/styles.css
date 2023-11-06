@@ -5,6 +5,14 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
@@ -20,13 +28,30 @@ header .nav {
   align-items: center;
   justify-content: space-around;
 }
+@media screen and (max-width: 768px) {
+  header .nav {
+    position: fixed;
+    z-index: 1000;
+  }
+}
 header .nav ul {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  header .nav ul {
+    display: flex;
+  }
+}
 header .nav ul li {
   margin: 20px;
   list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  header .nav ul li {
+    width: 60px;
+    height: 10px;
+  }
 }
 header .nav ul li a {
   color: aliceblue;
@@ -79,6 +104,16 @@ header .logo {
   height: 90px;
   width: 200px;
 }
+@media screen and (max-width: 987px) {
+  header .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    display: none;
+  }
+}
 header .logo .img {
   height: 100%;
   width: 100%;
@@ -89,6 +124,16 @@ header .redes {
   height: 30px;
   width: 150px;
 }
+@media screen and (max-width: 987px) {
+  header .redes {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .redes {
+    display: none;
+  }
+}
 header .redes img {
   height: 100%;
 }
@@ -98,6 +143,16 @@ header .redes img {
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
+@media screen and (max-width: 987px) {
+  .pie-de-pagina {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pie-de-pagina {
+    display: block;
+  }
+}
 .pie-de-pagina .g1 {
   width: 100%;
   max-width: 1200px;
@@ -106,6 +161,23 @@ header .redes img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px 0px;
+}
+@media screen and (max-width: 768px) {
+  .pie-de-pagina .g1 {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 987px) {
+  .pie-de-pagina .g1 {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 987px) {
+  .pie-de-pagina .g1 .box1 {
+    display: none;
+  }
 }
 .pie-de-pagina .g1 .box1 figure {
   width: 100%;
@@ -155,7 +227,17 @@ header .redes img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: calc(490vh - 300px);
+  min-height: calc(520vh - 300px);
+}
+@media screen and (max-width: 768px) {
+  .main-content {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    min-height: calc(333vh - 220px);
+  }
 }
 .main-content .main-text {
   width: 100%;
@@ -167,10 +249,20 @@ header .redes img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .main-content .main-text {
+    height: 800px;
+  }
+}
 .main-content .main-text .txt {
   text-align: center;
   margin-bottom: 240px;
   width: 730px;
+}
+@media screen and (max-width: 768px) {
+  .main-content .main-text .txt {
+    margin-bottom: 0;
+  }
 }
 .main-content .main-text .txt h1 {
   font-size: 70px;
@@ -192,6 +284,9 @@ header .redes img {
   text-decoration: none;
   padding: 11px 35px;
 }
+.main-content .btn-1:hover {
+  background-color: rgba(22, 22, 22, 0.614);
+}
 .main-content .sponsor {
   width: 100%;
   height: 40px;
@@ -211,18 +306,47 @@ header .redes img {
   background-color: rgb(0, 0, 0);
   padding: 100px 20px 100px 100px;
 }
+@media screen and (max-width: 768px) {
+  .main-content .info .section-metallica .metallica-container1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/metallica.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 100px 20px 100px 100px;
+  }
+}
 .main-content .info .section-metallica .metallica-container1 h2 {
   font-family: "Anton", sans-serif;
   font-size: 60px;
   color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+  .main-content .info .section-metallica .metallica-container1 h2 {
+    margin-left: -23%;
+  }
 }
 .main-content .info .section-metallica .metallica-container1 p {
   margin: 40px 130px;
   color: rgb(255, 255, 255);
   width: 350px;
 }
+@media screen and (max-width: 768px) {
+  .main-content .info .section-metallica .metallica-container1 p {
+    margin-left: -10%;
+    width: 100%;
+  }
+}
 .main-content .info .section-metallica .metallica-container1 p a {
   font-family: "Electrolize", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .main-content .info .section-metallica .metallica-container1 p a {
+    margin-left: -30%;
+  }
 }
 .main-content .info .section-metallica .metallica-container2 {
   background-image: url(../img/metallica.jpg);
@@ -231,6 +355,11 @@ header .redes img {
   width: 50%;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .main-content .info .section-metallica .metallica-container2 {
+    display: none;
+  }
 }
 .main-content .section-expansion {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rasgado.png);
@@ -250,11 +379,30 @@ header .redes img {
   border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
+@media screen and (max-width: 768px) {
+  .main-content .expansion-container2 {
+    display: none;
+  }
+}
 .main-content .expansion-container1 {
   margin-top: 40px;
   text-align: center;
   width: 50%;
   padding: 100px 20px 100px 100px;
+}
+@media screen and (max-width: 987px) {
+  .main-content .expansion-container1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-content .expansion-container1 {
+    margin-top: 80px;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
 }
 .main-content .expansion-container1 h2 {
   text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -269,6 +417,11 @@ header .redes img {
   text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   font-family: "Electrolize", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .main-content .expansion-container1 p {
+    margin-left: 60px;
+  }
+}
 .main-content .section-cartel {
   background-image: url(../img/cartel2.jpg);
   background-position: center;
@@ -276,6 +429,11 @@ header .redes img {
   background-attachment: fixed;
   width: 100%;
   padding: 355px 0px;
+}
+@media screen and (max-width: 768px) {
+  .main-content .section-cartel {
+    display: none;
+  }
 }
 .main-content .section-mapa {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mapa.jpeg);
@@ -452,10 +610,31 @@ header .redes img {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+@media screen and (max-width: 987px) {
+  .fondo-shows .contenedor {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fondo-shows .contenedor {
+    margin-top: 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+}
 .fondo-shows .contenedor .contenedor-conciertos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 987px) {
+  .fondo-shows .contenedor .contenedor-conciertos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .fondo-shows .contenedor .contenedor-conciertos {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .fondo-shows .contenedor .contenedor-conciertos h3 {
   font-family: "Anton", sans-serif;

@@ -17,12 +17,23 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-around;
+            @include mobile{
+                position: fixed;
+                z-index: 1000;
+            }
             ul {
                     display: flex;
                     align-items: center;
+                    @include mobile{
+                        display: flex;
+                    }
                     li {
                             margin: 20px;
                             list-style-type: none;
+                            @include mobile{
+                                width: 60px;
+                                height: 10px;
+                            }
                             a {
                                     color: aliceblue;
                                     text-transform: uppercase;
@@ -80,6 +91,12 @@ header{
     .logo {
             height: 90px;
             width: 200px;
+            @include tablet{
+                display: none;
+            }
+            @include mobile{
+                display: none;
+            }
             .img {
                     height: 100%;
                     width: 100%;
@@ -91,6 +108,12 @@ header{
         justify-content: space-between;
         height: 30px;
         width: 150px;
+        @include tablet {
+                display: none;
+            }
+        @include mobile{
+            display: none;
+        }
         img {
                 height: 100%;
             }

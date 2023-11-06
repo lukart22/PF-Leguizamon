@@ -6,7 +6,15 @@
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        min-height: calc(490vh - 300px);
+        min-height: calc(520vh - 300px);
+        @include mobile{
+                background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                padding-top: 100px;
+                min-height: calc(333vh - 220px);
+        }
         .main-text {
                 width: 100%;
                 height: 800px;
@@ -16,10 +24,16 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include mobile{
+                        height: 800px;
+                }
                 .txt {
                         text-align: center;
                         margin-bottom: 240px;
                         width: 730px;
+                        @include mobile{
+                                margin-bottom: 0;
+                        }
                         h1 {
                                 font-size: 70px;
                             }
@@ -41,6 +55,9 @@
                  border-image: initial;
                  text-decoration: none;
                  padding: 11px 35px;
+                 &:hover{
+                        background-color: rgba(22, 22, 22, 0.614)
+                 }
          }
         .sponsor {
                 width: 100%;
@@ -58,17 +75,38 @@
                                         width: 50%;
                                         background-color: rgb(0, 0, 0);
                                         padding: 100px 20px 100px 100px;
+                                        @include mobile{
+                                                background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/metallica.jpg);
+                                                background-size: contain;
+                                                background-position: center center;
+                                                background-repeat: no-repeat;
+                                                padding-top: 100px;
+                                                width: 100%;
+                                                text-align: center;
+                                                background-color: rgb(0, 0, 0);
+                                                padding: 100px 20px 100px 100px;
+                                        }
                                         h2 {
                                                 font-family: $tipografias-parrafos, sans-serif;
                                                 font-size: 60px;
                                                 color: rgb(255, 255, 255);
+                                                @include mobile{
+                                                        margin-left: -23%;
+                                                }
                                         }
                                         p {
                                                 margin: 40px 130px;
                                                 color: rgb(255, 255, 255);
                                                 width: 350px;
+                                                @include mobile{
+                                                        margin-left: -10%;
+                                                        width: 100%;
+                                                }
                                                 a {
                                                         font-family: $tipografias-titulos, sans-serif;
+                                                        @include mobile {
+                                                                margin-left: -30%;
+                                                        }
                                                 }
                                         }
                                         
@@ -81,6 +119,9 @@
                                 width: 50%;
                                 background-position: center;
                                 background-repeat: no-repeat;
+                                @include mobile{
+                                        display: none;
+                                }
                         
                         }
                 }
@@ -102,12 +143,25 @@
                 background-repeat: no-repeat;
                 border-radius: 20px;
                 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+                @include mobile{
+                        display: none;
+                }
         }
         .expansion-container1 {
                 margin-top: 40px;
                 text-align: center;
                 width: 50%;
                 padding: 100px 20px 100px 100px;
+                @include tablet {
+                        display: none;
+                }
+                @include mobile{
+                        margin-top: 80px;
+                        padding: 0;
+                        width: 100%;
+                        height: 400px;
+                        text-align: center;
+                }
                 h2 {
                         text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
                         color: #ffffff;
@@ -120,6 +174,9 @@
                         width: 350px;
                         text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
                         font-family: $tipografias-titulos, sans-serif;
+                        @include mobile{
+                                margin-left: 60px;
+                        }
                 }
         }
         .section-cartel {
@@ -129,6 +186,9 @@
                 background-attachment: fixed;
                 width: 100%;
                 padding: 355px 0px;
+                @include mobile{
+                        display: none;
+                }
         }
         .section-mapa {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mapa.jpeg);
