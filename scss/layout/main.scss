@@ -1,0 +1,153 @@
+
+.main-content{
+        width: 100%;
+        height: 800px;
+        background-image: url(../img/publico2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: calc(490vh - 300px);
+        .main-text {
+                width: 100%;
+                height: 800px;
+                font-family: $tipografias-parrafos, sans-serif;
+                color: rgb(255, 255, 255);
+                background-color: #0000006a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .txt {
+                        text-align: center;
+                        margin-bottom: 240px;
+                        width: 730px;
+                        h1 {
+                                font-size: 70px;
+                            }
+                        .txt-content{
+                            display: flex;
+                            justify-content: center;
+                            p {
+                                    width: 400px;
+                                    font-family: $tipografias-titulos, sans-serif;
+                                }
+                        }
+                    }
+        }
+         .btn-1 {
+                 display: inline-block;
+                 background-color: rgba(51, 51, 51, 0.575);
+                 color: rgb(96, 120, 166);
+                 text-transform: uppercase;
+                 border-image: initial;
+                 text-decoration: none;
+                 padding: 11px 35px;
+         }
+        .sponsor {
+                width: 100%;
+                height: 40px;
+                background-image: url(../img/sponsors.jpg);
+                background-position: center;
+                background-size: cover;
+        }
+        .info{
+                background-color: #000;
+                .section-metallica {
+                        display: flex;
+                        .metallica-container1 {
+                                        text-align: center;
+                                        width: 50%;
+                                        background-color: rgb(0, 0, 0);
+                                        padding: 100px 20px 100px 100px;
+                                        h2 {
+                                                font-family: $tipografias-parrafos, sans-serif;
+                                                font-size: 60px;
+                                                color: rgb(255, 255, 255);
+                                        }
+                                        p {
+                                                margin: 40px 130px;
+                                                color: rgb(255, 255, 255);
+                                                width: 350px;
+                                                a {
+                                                        font-family: $tipografias-titulos, sans-serif;
+                                                }
+                                        }
+                                        
+
+                        }
+                        .metallica-container2 {
+                                background-image: url(../img/metallica.jpg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                width: 50%;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                        
+                        }
+                }
+        }
+        .section-expansion {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/rasgado.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+        }
+        .expansion-container2 {
+                background-image: url(../img/publico1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 120px;
+                width: 500px;
+                height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 20px;
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        .expansion-container1 {
+                margin-top: 40px;
+                text-align: center;
+                width: 50%;
+                padding: 100px 20px 100px 100px;
+                h2 {
+                        text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+                        color: #ffffff;
+                        font-family: $tipografias-parrafos, sans-serif;
+                        font-size: 60px;
+                }
+                p {
+                        color: rgb(255, 255, 255);
+                        margin: 40px 130px;
+                        width: 350px;
+                        text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+                        font-family: $tipografias-titulos, sans-serif;
+                }
+        }
+        .section-cartel {
+                background-image: url(../img/cartel2.jpg);
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                width: 100%;
+                padding: 355px 0px;
+        }
+        .section-mapa {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mapa.jpeg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center center;
+                background-repeat: no-repeat;
+                padding: 245px 0px;
+                .mapa-content {
+                                text-align: center;
+                                h2 {
+                                        color: #ffffff;
+                                        font-family: $tipografias-parrafos, sans-serif;
+                                        font-size: 70px;
+                                        padding: 40px;
+                                }
+                                a {
+                                        text-decoration: none;
+                                }
+                        }
+        }
+}

@@ -1,0 +1,73 @@
+.fondo {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    .container-sponsor {
+            width: 900px;
+            height: 100%;
+            background-color: #353535;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.756);
+            .sponsor-titulo {
+                    margin: 90px;
+                    text-align: center;
+                    font-family: $tipografias-parrafos, sans-serif;
+                    color: #ffffff;
+                    font-size: 40px;
+                    font-weight: 100;
+            }
+            .sponsor2{
+                display: flex;
+                justify-content: center;
+                a{
+                    img {
+                            display: flex;
+                            height: 200px;
+                        }
+                }
+            }
+            .sponsor4 {
+                display: flex;
+                justify-content: center;
+                a {
+                        img {
+                            display: flex;
+                            height: 200px;
+                        }
+                    }
+            }
+            .sponsor6 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .bud{
+                    width: 200px;
+                    height: 200px;
+                    img {
+                            display: flex;
+                            height: 100px;
+                        }
+                }
+            }
+            .sponsor8{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                a{
+                    img {
+                            height: 100px;
+                        }
+                }
+            }
+            .sponsor10 {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                a{
+                    img {
+                            height: 300px;
+                        }
+                }
+            }
+
+        }
+}

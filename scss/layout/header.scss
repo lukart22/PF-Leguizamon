@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+header{
+    .nav {
+            font-family: $tipografias-titulos, sans-serif;
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            ul {
+                    display: flex;
+                    align-items: center;
+                    li {
+                            margin: 20px;
+                            list-style-type: none;
+                            a {
+                                    color: aliceblue;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                    &:hover {
+                                            color: rgb(146, 146, 146);
+                                            transition: .2s;
+                                        }
+                                }
+                        }
+                }
+        }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background-color: rgba(0, 0, 0, 0.913);
+        text-align: center;
+        li {
+                display: none;
+                line-height: 30px;
+                margin: 50px 0;
+                transition: all .5s;
+                a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 30px;
+                        text-transform: uppercase;
+                        font-family: $tipografias-parrafos, sans-serif;
+                        font-weight: 100;
+                        &:hover {
+                                color: #630c0c;
+                                transition: .2s;
+                            }
+                    }
+            }
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+    #check:checked~.nav-menu {
+        height: 100vh;
+    }
+    
+    #check:checked~.nav-menu li {
+        display: block;
+    }
+    .logo {
+            height: 90px;
+            width: 200px;
+            .img {
+                    height: 100%;
+                    width: 100%;
+                }
+    
+    }
+    .redes {
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        width: 150px;
+        img {
+                height: 100%;
+            }
+    }
+
+
+
+
+
+
+
+
+
+}
