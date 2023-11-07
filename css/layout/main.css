@@ -1,13 +1,8 @@
 /* Error: Undefined mixin.
  *    ,
- * 10 | /         @include mobile{
- * 11 | |                 background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
- * 12 | |                 background-size: cover;
- * 13 | |                 background-position: center center;
- * 14 | |                 background-repeat: no-repeat;
- * 15 | |                 padding-top: 100px;
- * 16 | |                 min-height: calc(333vh - 220px);
- * 17 | \         }
+ * 10 | /         @include tablet {
+ * 11 | |                         min-height: calc(480vh - 220px);
+ * 12 | \                 }
  *    '
  *   scss\layout\main.scss 10:9  root stylesheet */
 
@@ -19,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c          @include mobile{\a 11 \2502  \2502                  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);\a 12 \2502  \2502                  background-size: cover;\a 13 \2502  \2502                  background-position: center center;\a 14 \2502  \2502                  background-repeat: no-repeat;\a 15 \2502  \2502                  padding-top: 100px;\a 16 \2502  \2502                  min-height: calc(333vh - 220px);\a 17 \2502  \2514          }\a    \2575 \a   scss\\layout\\main.scss 10:9  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c          @include tablet {\a 11 \2502  \2502                          min-height: calc(480vh - 220px);\a 12 \2502  \2514                  }\a    \2575 \a   scss\\layout\\main.scss 10:9  root stylesheet";
 }

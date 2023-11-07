@@ -46,6 +46,15 @@
                             display: flex;
                             height: 100px;
                         }
+                        @include tablet {
+                           margin-left: 10px;
+                        }
+                }
+                .axion{
+                    @include tablet {
+                            width: 200px;
+                            height: 100px;
+                        }
                 }
             }
             .sponsor8{
@@ -55,6 +64,12 @@
                 a{
                     img {
                             height: 100px;
+                        }
+                }
+                .fila{
+                    @include mobile {
+                        width: 130px;
+                        height: 90px;
                         }
                 }
             }
@@ -67,6 +82,13 @@
                             height: 300px;
                         }
                 }
+                .c3{
+                    @include mobile{
+                        width: 200px;
+                        height: 180px;
+                    }
+                }
+            
             }
 
         }

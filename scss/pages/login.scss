@@ -12,6 +12,13 @@
             display: flex;
             justify-content: center;
             width: 50%;
+            @include mobile {
+                    margin-top: 100px;
+                    width: 100%;
+                }
+            @include tablet {
+                    width: 100%;
+                }
             .login-login{
                 h2 {
                         font-size: 90px;
