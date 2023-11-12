@@ -71,7 +71,7 @@ header .nav ul li a:hover {
   header .nav ul li a {
     width: 100%;
     height: 100%;
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 header .nav-menu {
@@ -246,7 +246,7 @@ header .redes img {
 }
 @media screen and (max-width: 987px) {
   .main-content {
-    min-height: calc(480vh - 220px);
+    min-height: calc(250vh - 220px);
   }
 }
 @media screen and (max-width: 431px) {
@@ -423,6 +423,8 @@ header .redes img {
 @media screen and (max-width: 987px) {
   .main-content .expansion-container1 {
     width: 100%;
+    display: block;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 431px) {
@@ -449,7 +451,7 @@ header .redes img {
 }
 @media screen and (max-width: 987px) {
   .main-content .expansion-container1 p {
-    width: 30px;
+    width: 300px;
   }
 }
 @media screen and (max-width: 431px) {
@@ -466,6 +468,11 @@ header .redes img {
   padding: 355px 0px;
 }
 @media screen and (max-width: 431px) {
+  .main-content .section-cartel {
+    display: none;
+  }
+}
+@media screen and (max-width: 987px) {
   .main-content .section-cartel {
     display: none;
   }
