@@ -37,6 +37,13 @@
                             height: 200px;
                         }
                     }
+                .AmericanExpress{
+                    @include mobile{
+                        margin-top: 50px;
+                        width: 140px;
+                        height: 130px;
+                    }
+                }
             }
             .sponsor6 {
                 display: flex;
@@ -58,7 +65,12 @@
                             width: 200px;
                             height: 100px;
                         }
-                }
+                    @include mobile{
+                            width: 140px;
+                            height: 90px;
+                    }
+                    
+                    }
             }
             .sponsor8{
                 width: 100%;
@@ -86,10 +98,16 @@
                             height: 300px;
                         }
                 }
+                .dfentertainment{
+                    @include mobile{
+                        width: 240px;
+                        height: 240px;
+                    }
+                }
                 .c3{
                     @include mobile{
-                        width: 200px;
-                        height: 180px;
+                        width: 100px;
+                        height: 80px;
                     }
                 }
             

@@ -243,7 +243,7 @@ header .redes img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: calc(480vh - 180px);
+  min-height: calc(500vh - 250px);
 }
 @media screen and (max-width: 987px) {
   .main-content {
@@ -725,64 +725,22 @@ header .redes img {
   color: #ffffff;
 }
 .fondo-shows .contenedor .contenedor-conciertos .card1 {
-  border-radius: 20px;
   background-image: url("../img/grilla-concierto/buenosaires.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.fondo-shows .contenedor .contenedor-conciertos .card1:hover {
-  opacity: 80%;
-  transition: 0.1s;
 }
 .fondo-shows .contenedor .contenedor-conciertos .card2 {
   background-image: url("../img/grilla-concierto/lapampa.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-}
-.fondo-shows .contenedor .contenedor-conciertos .card2:hover {
-  opacity: 80%;
-  transition: 0.1s;
 }
 .fondo-shows .contenedor .contenedor-conciertos .card3 {
   background-image: url("../img/grilla-concierto/catamarca.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-}
-.fondo-shows .contenedor .contenedor-conciertos .card3:hover {
-  opacity: 80%;
-  transition: 0.1s;
 }
 .fondo-shows .contenedor .contenedor-conciertos .card4 {
   background-image: url("../img/grilla-concierto/cordoba.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-}
-.fondo-shows .contenedor .contenedor-conciertos .card4:hover {
-  opacity: 80%;
-  transition: 0.1s;
 }
 .fondo-shows .contenedor .contenedor-conciertos .card5 {
   background-image: url("../img/grilla-concierto/santacruz.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-}
-.fondo-shows .contenedor .contenedor-conciertos .card5:hover {
-  opacity: 80%;
-  transition: 0.1s;
 }
 .fondo-shows .contenedor .contenedor-conciertos .card6 {
   background-image: url("../img/grilla-concierto/entrerios.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-}
-.fondo-shows .contenedor .contenedor-conciertos .card6:hover {
-  opacity: 80%;
-  transition: 0.1s;
 }
 .fondo-shows .contenedor .contenedor-conciertos .card1, .fondo-shows .contenedor .contenedor-conciertos .card2, .fondo-shows .contenedor .contenedor-conciertos .card3, .fondo-shows .contenedor .contenedor-conciertos .card4, .fondo-shows .contenedor .contenedor-conciertos .card5, .fondo-shows .contenedor .contenedor-conciertos .card6 {
   border-radius: 10px;
@@ -793,6 +751,13 @@ header .redes img {
   overflow: hidden;
   background-size: cover;
   background-position: center center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.fondo-shows .contenedor .contenedor-conciertos .card1:hover, .fondo-shows .contenedor .contenedor-conciertos .card2:hover, .fondo-shows .contenedor .contenedor-conciertos .card3:hover, .fondo-shows .contenedor .contenedor-conciertos .card4:hover, .fondo-shows .contenedor .contenedor-conciertos .card5:hover, .fondo-shows .contenedor .contenedor-conciertos .card6:hover {
+  opacity: 80%;
+  transition: 0.1s;
 }
 .fondo-shows .contenedor .contenedor-conciertos .textos {
   height: 100%;
@@ -879,6 +844,13 @@ header .redes img {
   display: flex;
   height: 200px;
 }
+@media screen and (max-width: 431px) {
+  .fondo .container-sponsor .sponsor4 .AmericanExpress {
+    margin-top: 50px;
+    width: 140px;
+    height: 130px;
+  }
+}
 .fondo .container-sponsor .sponsor6 {
   display: flex;
   justify-content: space-around;
@@ -901,6 +873,12 @@ header .redes img {
   .fondo .container-sponsor .sponsor6 .axion {
     width: 200px;
     height: 100px;
+  }
+}
+@media screen and (max-width: 431px) {
+  .fondo .container-sponsor .sponsor6 .axion {
+    width: 140px;
+    height: 90px;
   }
 }
 .fondo .container-sponsor .sponsor8 {
@@ -927,9 +905,15 @@ header .redes img {
   height: 300px;
 }
 @media screen and (max-width: 431px) {
+  .fondo .container-sponsor .sponsor10 .dfentertainment {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 431px) {
   .fondo .container-sponsor .sponsor10 .c3 {
-    width: 200px;
-    height: 180px;
+    width: 100px;
+    height: 80px;
   }
 }
 

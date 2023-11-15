@@ -1,12 +1,12 @@
 
 .main-content{
         width: 100%;
-        height: 800px;
+        height: 900px - 100px;
         background-image: url(../img/publico2.jpg);
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        min-height: calc(480vh - 180px);
+        min-height: calc(500vh - 250px);
         @include tablet {
                         min-height: calc(250vh - 220px);
                 }

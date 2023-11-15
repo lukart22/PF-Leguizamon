@@ -43,64 +43,23 @@
                     color: #ffffff;
                     }
                     .card1 {
-                        border-radius: 20px;
                         background-image: url('../img/grilla-concierto/buenosaires.jpg');
-                        background-size: cover;
-                        background-position: center;
-                        &:hover {
-                                opacity: 80%;
-                                transition: .1s;
-                            }
                     }
                     .card2 {
                         background-image: url('../img/grilla-concierto/lapampa.jpg');
-                        background-size: cover;
-                        background-position: center;
-                        border-radius: 20px;
-                        &:hover {
-                                opacity: 80%;
-                                transition: .1s;
-                            }
                     }
                     .card3 {
                         background-image: url('../img/grilla-concierto/catamarca.jpg');
-                        background-size: cover;
-                        background-position: center;
-                        border-radius: 20px;
-                        &:hover {
-                                opacity: 80%;
-                                transition: .1s;
-                            }
                     }
                     .card4 {
                         background-image: url('../img/grilla-concierto/cordoba.jpg');
-                        background-size: cover;
-                        background-position: center;
-                        border-radius: 20px;
-                        &:hover {
-                                opacity: 80%;
-                                transition: .1s;
-                            }
                     }
                     .card5 {
                         background-image: url('../img/grilla-concierto/santacruz.jpg');
-                        background-size: cover;
-                        background-position: center;
-                        border-radius: 20px;
-                        &:hover {
-                                opacity: 80%;
-                                transition: .1s;
-                            }
                     }
                     .card6 {
                         background-image: url('../img/grilla-concierto/entrerios.jpg');
-                        background-size: cover;
-                        background-position: center;
-                        border-radius: 20px;
-                        &:hover {
-                                opacity: 80%;
-                                transition: .1s;
-                            }
+                        
                     }
                     .card1, .card2, .card3, .card4, .card5, .card6 {
                         border-radius: 10px;
@@ -111,7 +70,14 @@
                         overflow: hidden;
                         background-size: cover;
                         background-position: center center;
+                        background-size: cover;
+                            background-position: center;
+                            border-radius: 20px;
                         
+                            &:hover {
+                                opacity: 80%;
+                                transition: .1s;
+                            }
                     }
                     .textos {
                         height: 100%;
