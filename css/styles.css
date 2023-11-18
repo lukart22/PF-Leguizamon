@@ -262,11 +262,6 @@ header .redes img {
 }
 @media screen and (max-width: 360px) {
   .main-content {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding-top: 100px;
     min-height: calc(400vh - 180px);
   }
 }
@@ -739,7 +734,7 @@ header .redes img {
 .fondo-shows .contenedor .contenedor-conciertos .card6 {
   background-image: url("../img/grilla-concierto/entrerios.jpg");
 }
-.fondo-shows .contenedor .contenedor-conciertos .card1, .fondo-shows .contenedor .contenedor-conciertos .card2, .fondo-shows .contenedor .contenedor-conciertos .card3, .fondo-shows .contenedor .contenedor-conciertos .card4, .fondo-shows .contenedor .contenedor-conciertos .card5, .fondo-shows .contenedor .contenedor-conciertos .card6 {
+.fondo-shows .contenedor .contenedor-conciertos .card {
   border-radius: 10px;
   min-height: 200px;
   font-weight: bold;
@@ -752,7 +747,7 @@ header .redes img {
   background-position: center;
   border-radius: 20px;
 }
-.fondo-shows .contenedor .contenedor-conciertos .card1:hover, .fondo-shows .contenedor .contenedor-conciertos .card2:hover, .fondo-shows .contenedor .contenedor-conciertos .card3:hover, .fondo-shows .contenedor .contenedor-conciertos .card4:hover, .fondo-shows .contenedor .contenedor-conciertos .card5:hover, .fondo-shows .contenedor .contenedor-conciertos .card6:hover {
+.fondo-shows .contenedor .contenedor-conciertos .card:hover {
   opacity: 80%;
   transition: 0.1s;
 }

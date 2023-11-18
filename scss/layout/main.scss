@@ -19,11 +19,6 @@
                 min-height: calc(317vh - 180px);
         }
         @include mobile1{
-                background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(../img/responsive/tipodelaguitarra.jpg);
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                padding-top: 100px;
                 min-height: calc(400vh - 180px);
         }
         .main-text {
